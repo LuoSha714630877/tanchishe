@@ -1,0 +1,69 @@
+.content{
+	width: 640px;
+	height: 640px;
+	margin: 100px auto;
+	position: relative;
+}
+.btn{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 2;
+}
+.btn button{
+	background: none;
+	border:none;
+	background-size: 100% 100%;
+
+	cursor: pointer;/* 鼠标放上去有手的形状 */
+	outline: none;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+}
+
+.startBtn button{
+	width: 200px;
+	height: 80px;
+	background-image: url(../images/start.png);
+	margin-left: -100px;
+	margin-top: -40px;
+}
+
+.pauseBtn{
+	display: none;
+}
+.pauseBtn button{
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/pausex.png);
+	transform: translate(-50%,-50%);
+}
+
+/* snakewrap 样式 */
+#snakeWrap{
+	width: 600px;
+	height: 600px;
+	background:#225675;
+	border:20px solid #FF6666;
+	position: relative;
+}
+
+.snakeHead{
+	background-image: url(../images/snake.png);
+	background-size: cover;
+	border-radius: 50%;
+}
+.snakeBody{
+	background-color: #009966;
+	border-radius: 50%;
+}
+.food{
+	background-image: url(../images/food.png);
+	background-size: cover;
+}
